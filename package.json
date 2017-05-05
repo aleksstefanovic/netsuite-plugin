@@ -1,5 +1,5 @@
 {
-  "name": "netsuite-plugin",
+  "name": "@aleks101/netsuite-plugin",
   "version": "1.0.0",
   "description": "A command line tool for pushing and pulling code from netsuite environments",
   "main": "index.js",

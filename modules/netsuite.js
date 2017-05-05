@@ -31,11 +31,17 @@ function push (filename, netsuiteConfig) {
                         if (err) {
                             resolve({"status":false,"message":JSON.stringify(err)}); 
                         }
-                        if (res.status != '200') {
-                            resolve({"status":false,"message":JSON.stringify(res)}); 
+                        else if (res == undefined) {
+                            resolve({"status":false,"message":"File does not exist!"}); 
                         }
-                        bar.tick(10);
-                        resolve({"status":true,"message":null}); 
+                        else {
+                            console.log("dont you dare");
+                            if (res.status != '200') {
+                                resolve({"status":false,"message":JSON.stringify(res)}); 
+                            }
+                            bar.tick(10);
+                            resolve({"status":true,"message":null}); 
+                        }
                     });
             });
         }
