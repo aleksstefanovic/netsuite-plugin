@@ -35,7 +35,6 @@ function push (filename, netsuiteConfig) {
                             resolve({"status":false,"message":"File does not exist!"}); 
                         }
                         else {
-                            console.log("dont you dare");
                             if (res.status != '200') {
                                 resolve({"status":false,"message":JSON.stringify(res)}); 
                             }
