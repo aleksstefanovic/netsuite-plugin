@@ -1,0 +1,1 @@
+A commandline tool written entirely in NodeJS whose purpose is to provide basic NetSuite developments tools to assist in CI/CD.  
